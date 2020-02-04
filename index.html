@@ -1,1 +1,135 @@
-Hola
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Encuesta</title>
+    <style>
+     #num1{
+     	width:100%;
+     	margin-top: 20px;
+     	 padding: 30px;
+     	background-color: yellow;
+     }
+     form{
+        margin-left: 100px;
+      }
+     #num2{
+        width:100%;       
+        margin-bottom: 20px;
+        padding: 30px;
+     	background-color: cyan;
+     }
+         input[type=checkbox] + label {
+            color: #ccc;
+          font-style: italic;
+    }  
+    input[type=checkbox]:checked + label {
+      color: #f00;
+     font-style: normal;
+    }
+      #boton:hover{
+        transform: scale(1.2, 1.3);
+        background-color: #0af037;
+          font-weight: bold;
+     }
+    </style>
+    <script>
+
+
+
+     function muestra(){
+        document.getElementById('otro').style.display='block';
+     }
+     function oculta(){
+        document.getElementById('otro').style.display='none';
+     }
+     
+    </script>
+</head>
+<body>
+	<div id="header">
+		<img src="logo_univa.jpg" alt="" style="width:1024px;height:250px;">
+	</div>
+	<h1 id="num1">Cuestionario para primer semestre, Medicina</h1>
+	<h1 id="num2">Datos Personales</h1>
+	<form action="pru2.html">
+
+		<h3>Nombre completo (Apellido paterno, apellido materno, nombre(s)</h3>
+		<input type="text" style="width:500px">
+		<h3>Sexo</h3>
+		   <input type="radio" name="sexo" value="Femenino">Femenino<br>
+		   <input type="radio" name="sexo" value ="Masculino">Masculino<br>
+		   
+		  
+		   <h3>Cual es tu edad?</h3> 
+           <input type="number" name="miedad" min="15" max="50" value="17">
+          
+           <h3>A qué se dedica tu papá? </h3> 
+           <input type="text" style="width:500px">
+           <h3>A qué se dedica tu mamá?</h3> 
+           <input type="text" style="width:500px">
+           <h3>Cuántos hermanos tienes?</h3> 
+           <input type="number" name="numhnos" min="0" max="5" value="0">
+           <h3>Qué lugar ocupas entre ellos?</h3> 
+           <input type="number" name="lugar" min="1" max="5" value="1">
+           <h3>Con quién vives?</h3> 
+             <table>
+             	<tr>
+             		<td style="width:300px"><input type="radio" name="vivocon" checked>Mis Padres</td>
+                <td ><input type="radio" name="vivocon">Mis abuelos</td>
+             	</tr>
+             	<tr>
+             		<td><input type="radio" name="vivocon">Mi mamá</td>
+                    <td><input type="radio" name="vivocon">Algún familiar</td>
+             	</tr>
+             	<tr>
+             		<td><input type="radio" name="vivocon">Mi papá</td>
+                    <td><input type="radio" name="vivocon">Solo</td>
+             	</tr>
+             	<tr>
+             		<td><input type="radio" name="vivocon" onclick="muestra()">Otro (Especifique)</td>
+                    <td></td>
+             	</tr>
+                 <tr>
+             		<td colspan="2">
+             			<input type="text" style="width:500px" id="otro" hidden>
+             		</td>
+                 
+             	</tr>
+             </table>
+           <h3>Llena completamente los siguentes datos</h3>
+           <table>
+           	<tr>
+           		<td>Calle</td>
+           		<td><input type="text" style="width:400px"></td>
+           	</tr>
+           	<tr>
+           		<td>Num.Ext e Int.</td>
+           		<td><input type="text"  style="width:400px"></td>
+           	</tr>
+           	<tr>
+           		<td>Colonia</td>
+           		<td><input type="text" style="width:400px"></td>
+           	</tr>
+           	<tr>
+           		<td>Ciudad</td>
+           		<td><input type="text" style="width:400px"></td>
+           	</tr>
+           	<tr>
+           		<td>Teléfono</td>
+           		<td><input type="text" style="width:400px"></td>
+           	</tr>
+           	<tr>
+           		<td>Correo Electronico</td>
+           		<td><input type="text" style="width:400px"></td>
+           	</tr>
+           <input type="checkbox"  id="ossm" > 
+           <label for="ossm">UNIVA</label> 
+
+           </table>
+
+         <input type="submit" id="boton" value="Continuar" style="width:130px; height:80px; margin-left: 350px; margin-top: 20px;  background-color: #5af278;">
+	</form>
+</body>
+</html>
