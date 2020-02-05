@@ -31,6 +31,13 @@
     </style>
 </head>
 <body>
+    <?php
+      echo $_POST['vivocon'];
+      $var = $_POST['vivocon'];
+      if($var ='otro'){
+      echo "Vivo con ".$_POST['otro'];
+  }
+    ?>
 	<div id="header">
 		<img src="logo_univa.jpg" alt="" style="width:1024px;height:250px;">
 	</div>
