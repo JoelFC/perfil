@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Encuesta</title>
+    <style>
+     #num1{
+     	width:100%;
+     	margin-top: 20px;
+    
+    
+     }
+     form{
+        margin-left: 100px;
+      }
+     #num2{
+        width:100%;       
+        margin-bottom: 20px;
+       
+    
+     }
+         form{
+             margin-left: 200px;
+         }
+ 
+      #boton:hover{
+        transform: scale(1.2, 1.3);
+        background-color: #0af037;
+          font-weight: bold;
+     }
+     h3{
+        margin: 10px;
+     }
+    </style>
+
+</head>
+<body>
+	<div id="header" >
+		<img src="logo_univa.jpg" alt="" style="width:550px;height:150px; margin-left:300px">
+	</div>
+  <div style="background-color: #e0e0eb; width: 50%; margin: auto;">
+   <h1 id="num1" style="text-align: center">Formato RAMLE-19</h1>
+	 <h1 id="num2" style="text-align: center">Admisión a Carrera de Ciencias de la salud</h1>
+  </div>
+	<h1 id="num2" style="margin-left:500px">Datos Generales</h1>
+	<form action="index2.php" method="post"> 		                   
+         
+           <table>
+           	
+           	<tr>
+           		<td><h3>Nombre</h3></td>
+           		<td><input type="text"  style="width:400px" name="nombre"></td>
+           	</tr>
+
+           	<tr>
+           		<td><h3>Matricula</h3></td>
+           		<td><input type="text" style="width:400px" name="matricula"></td>
+           	</tr>
+            <tr>
+              <td><h3>Edad</h3></td>
+              <td>  <input type="number" name="edad" min="17" max="35" value="17">
+           </td>
+
+            </tr>
+           	<tr>
+           		<td><h3>Estado civil</h3></td>
+           		<td><input type="text" style="width:400px" name="edocivil"></td>
+           	</tr>
+           	<tr>
+           		<td><h3>Lugar de origen</h3></td>
+           		<td><input type="text" style="width:400px" name="lugarorigen"></td>
+           	</tr>
+           	<tr>
+           		<td><h3>Quien pagará tu carrera?</h3></td>
+           		<td><input type="text" style="width:400px" name="pagacarrera"></td>
+           	</tr>
+           
+
+           </table>
+           <h3>Instrucciones:</h3> 
+           <p style="width: 75%; font-size: 25px"> A continuación veras unas serie de item´s con 2 posibles respuesta (Si y No), anota la respuesta que más refleje lo que tu piensas o tu estilo de vida. Es muy importante que contestes todos los item´s y los contestes con toda honestidad.</p>
+
+         <input type="submit" id="boton" value="Continuar" style="width:130px; height:80px; margin-left: 350px; margin-top: 20px;  background-color: #5af278;">
+	</form>
+</body>
+</html>
