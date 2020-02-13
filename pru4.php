@@ -28,6 +28,12 @@
 	<div id="header">
 		<img src="logo_univa.jpg" alt="" style="width:1024px;height:250px;">
 	</div>
+
+    <?php
+        echo "Me rei: ".$_POST['em1']."<br>";
+        echo "Me Aburri: ".$_POST['em2']."<br>";
+        echo "Me senti solo: ".$_POST['em3']."<br>";
+    ?>
 	<h1 id="num1">Cuestionario para primer semestre, Medicina</h1>
 	<h1 id="num2"> Fin del cuestionario Conociéndote mejor</h1>
 	     <div>
