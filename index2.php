@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Encuesta</title>
 	<style>
       body{
       	   font-size: 25px;
@@ -21,7 +21,7 @@
 </head>
 <body>
 <?php
-    echo $_POST['nombre']." ".$_POST['matricula']." ".$_POST['edad']." ".$_POST['edocivil'];
+    echo str_repeat("   ",6).$_POST['nombre']." --> ".$_POST['matricula']."<br> "; //.$_POST['edad']." <br>".$_POST['edocivil']." ".$_POST['lugarorigen']." ".$_POST['pagacarrera'];
  ?>
 <form action="guardar.php" method = "post">
 	<img src="logo_univa.jpg" alt="" style="width:550px;height:150px; margin-left:200px">
