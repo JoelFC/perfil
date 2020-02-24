@@ -4,6 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Encuesta</title>
+  <script>
+    function checar(){
+      var vnom = document.getElementById('nombre').value;
+      var vmatr = document.getElementById('matricula').value;
+      var x = document.getElementById('pagacarrera').value;
+      if(x.length>0 && vnom.length>0 && vmatr.length>0)
+        document.getElementById('boton').disabled = false;
+      else
+        document.getElementById('boton').disabled = true;
+         //alert('componente cambió');
+
+    }
+
+  </script>
     <style>
      #num1{
      	width:100%;
@@ -50,12 +64,12 @@
 
            	<tr>
            		<td><h3>Nombre</h3></td>
-           		<td><input type="text"  style="width:400px" name="nombre"></td>
+           		<td><input type="text"  style="width:400px"  id="nombre" name="nombre"></td>
            	</tr>
 
            	<tr>
            		<td><h3>Matricula</h3></td>
-           		<td><input type="text" style="width:400px" name="matricula"></td>
+           		<td><input type="text" style="width:400px" id="matricula" name="matricula"></td>
            	</tr>
             <tr>
               <td><h3>Edad</h3></td>
@@ -73,7 +87,7 @@
            	</tr>
            	<tr>
            		<td><h3>Quien pagará tu carrera?</h3></td>
-           		<td><input type="text" style="width:400px" name="pagacarrera"></td>
+           		<td><input type="text" style="width:400px" id = "pagacarrera" name="pagacarrera" onchange="checar()"> </td>
            	</tr>
 
 
@@ -81,7 +95,7 @@
            <h3>Instrucciones:</h3>
            <p style="width: 75%; font-size: 25px"> A continuación veras unas serie de item´s con 2 posibles respuesta (Si y No), elige la respuesta que más refleje lo que tu piensas o tu estilo de vida. Es muy importante que contestes todos los item´s y los contestes con toda honestidad.</p>
 
-         <input type="submit" id="boton" value="Continuar" style="width:130px; height:80px; margin-left: 350px; margin-top: 20px;  background-color: #5af278;">
+         <input type="submit" id="boton" value="Continuar" style="width:130px; height:80px; margin-left: 350px; margin-top: 20px;  background-color: #5af278;"  disabled>
 	</form>
 </body>
 </html>

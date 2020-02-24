@@ -1,3 +1,18 @@
+<?php
+ session_start();
+ $_SESSION['matricula'] = $_POST['matricula'];
+ if(isset($_POST['nombre']))
+    $_SESSION['nombre'] = $_POST['nombre'];
+ else
+ 	 $_SESSION['nombre']='Nombre no capturado';
+ $_SESSION['matricula'] = $_POST['matricula'];
+ $_SESSION['edad'] = $_POST['edad'];
+ $_SESSION['edocivil']= $_POST['edocivil'];
+ $_SESSION['lugarorigen'] = $_POST['lugarorigen'];
+ $_SESSION['pagacarrera']= $_POST['pagacarrera'];
+
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,7 +36,7 @@
 </head>
 <body>
 <?php
-    echo str_repeat("   ",6).$_POST['nombre']." --> ".$_POST['matricula']."<br> "; //.$_POST['edad']." <br>".$_POST['edocivil']." ".$_POST['lugarorigen']." ".$_POST['pagacarrera'];
+    echo $_SESSION['nombre']." --> ".$_SESSION['matricula']."<br> "; //.$_POST['edad']." <br>".$_POST['edocivil']." ".$_POST['lugarorigen']." ".$_POST['pagacarrera'];
  ?>
 <form action="guardar.php" method = "post">
 	<img src="logo_univa.jpg" alt="" style="width:550px;height:150px; margin-left:200px">
@@ -35,8 +50,8 @@
 <tr style="background-color: #e3d8d8">
 	<td style="width:100px" >1</td>
 	<td>¿Vives solo? </td>
-	<td><label for="solos">Si</label><input type="radio" name="solo" id="solos" value="solo_Si" > </td>
-	<td><label for="solon">No</label><input type="radio" name="solo" id="solon" value="Solo_No"></td>
+	<td><label for="solos">Si</label><input type="radio" name="solo" id="solos" value="solo_si" > </td>
+	<td><label for="solon">No</label><input type="radio" name="solo" id="solon" value="Solo_no"></td>
 </tr>
 <tr>
 	<td>2</td>
