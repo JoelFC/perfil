@@ -35,9 +35,7 @@
 
 </head>
 <body>
-<?php
-    echo $_SESSION['nombre']." --> ".$_SESSION['matricula']."<br> "; //.$_POST['edad']." <br>".$_POST['edocivil']." ".$_POST['lugarorigen']." ".$_POST['pagacarrera'];
- ?>
+
 <form action="guardar.php" method = "post">
 	<img src="logo_univa.jpg" alt="" style="width:550px;height:150px; margin-left:200px">
 <table>
