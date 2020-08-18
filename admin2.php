@@ -1,8 +1,8 @@
 <?php
    session_start();
 
-   //proceso de guardado en BD
-
+   //    proceso de guardado en BD
+   // este es un comentario
 include "conecta.php";
 include "debugger.php";
  
