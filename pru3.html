@@ -9,10 +9,7 @@
         width:450px;
         padding-left: 50px;
       }
-      .head{
-       padding-left: 5px;
-       border-bottom: 1px solid red
-      }
+    
       .centro{
        
           text-align: center;
@@ -37,6 +34,12 @@
         background-color: #0af037;
           font-weight: bold;
      }
+     .head{
+         border-style: solid;
+         border-width: 1px;
+         width: 150px;
+         text-align: center;
+     }
     </style>
     <script>
      function muestraPsic(){
@@ -54,14 +57,14 @@
 	</div>
 
 	<form action="pru4.php" method ="post">
-         <h1>EMOCIONAL. Los últimos 6 meses</h1>
+         <h1>EMOCIONAL. En el último año</h1>
          <table>
              <tr>
                  <td class="ppal"></td>
                  <td class="head">Nunca</td>
-                 <td>Casi Nunca</td>
                  <td class="head">Algunas Veces</td>
-                 <td>Casi siempre</td>
+                 <td class="head">Con Frecuencia</td>
+                
                  <td class="head">Siempre</td>
              </tr>
              <tr>
@@ -69,313 +72,396 @@
                  <td class="centro"><input type="radio" value="Nunca" name="em1" ></td>
                  <td class="centro"><input type="radio" value="CasiNunca" name="em1"></td>
                  <td class="centro"><input type="radio"  value="AlgunasVeces" name="em1"></td>
-                 <td class="centro"><input type="radio" value="CasiSiempre" name="em1"></td>
-                 <td  class="centro"> <input type="radio" value="Siempre" name="em1"></td>
+             
+                 <td  class="centro"> <input type="radio" value="Siempre" name="em1" ></td>
              </tr>
              <tr>
                  <td>Me aburrí mucho</td>
-                 <td class="centro"><input type="radio" value="Nunca" name="em2"></td>
+                 <td class="centro"><input type="radio" value="Nunca" name="em2" ></td>
                  <td class="centro"><input type="radio" value="CasiNunca" name="em2"></td>
                  <td class="centro"><input type="radio" value="AlgunasVeces" name="em2"></td>
-                 <td class="centro"><input type="radio" value="CasiSiempre" name="em2"></td>
+               
                  <td class="centro"><input type="radio" value="Siempre" name="em2"></td>
              </tr>
              <tr>
                  <td>Me sentí solo(a)</td>
-                 <td class="centro"><input type="radio" value="Nunca" name="em3"></td>
+                 <td class="centro"><input type="radio" value="Nunca" name="em3" ></td>
                  <td class="centro"><input type="radio" value="CasiNunca" name="em3"></td>
                  <td class="centro"><input type="radio" value="AlgunasVeces" name="em3"></td>
-                 <td class="centro"><input type="radio" value="CasiSiempre" name="em3"></td>
-                 <td class="centro"><input type="radio" value="Siempre" name="em1"></td>
+                
+                 <td class="centro"><input type="radio" value="Siempre" name="em3"></td>
              </tr>
              <tr>
                  <td>Tuve miedo o me sentí inseguro</td>
-                 <td class="centro"><input type="radio" value="Nunca" name="em4"></td>
+                 <td class="centro"><input type="radio" value="Nunca" name="em4" ></td>
                  <td class="centro"><input type="radio" alue="CasiNunca" name="em4"> </td>
                  <td class="centro"><input type="radio" value="AlgunasVeces" name="em4"></td>
-                 <td class="centro"><input type="radio" value="CasiSiempre" name="em4"></td>
-                 <td class="centro"><input type="radio" value="Siempre"  name="em1"></td>
+             
+                 <td class="centro"><input type="radio" value="Siempre"  name="em4"></td>
              </tr>
              <tr>
                  <td>Resuelvo los conflictos de manera pacífica</td>
                  <td class="centro"><input type="radio" value="Nunca" name="em5"></td>
                  <td class="centro"><input type="radio" value="CasiNunca" name="em5"></td>
                  <td class="centro"><input type="radio" value="AlgunasVeces" name="em5"></td>
-                 <td class="centro"><input type="radio" value="CasiSiempre" name="em5"></td>
-                 <td class="centro"><input type="radio" value="Siempre"  name="em5"></td>
+               
+                 <td class="centro"><input type="radio" value="Siempre"  name="em5" ></td>
              </tr>
          </table>
-		     <h1>AUTOESTIMA. Los últimos 6 meses</h1>
+		     <h1>AUTOESTIMA. En el último año</h1>
          <table>
              <tr>
                  <td class="ppal"></td>
-                 <td >Nunca</td>
-                 <td>Casi Nunca</td>
-                 <td>Algunas Veces</td>
-                 <td>Casi siempre</td>
-                 <td>Siempre</td>
+                 <td class="head" >Nunca</td>
+                 <td class="head">Algunas Veces</td>
+                 <td class="head">Con Frecuencia</td>
+                 
+                 <td class="head">Siempre</td>
              </tr>
              <tr>
                  <td>Me sentí orgulloso(a) de mi mismo</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
+                 <td class="centro"><input type="radio" value="Nunca" name= "ae1"></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name= "ae1" ></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name= "ae1"></td>
+              
+                 <td class="centro"><input type="radio" value="Siempre" name= "ae1"></td>
              </tr>
              <tr>
                  <td>Me gusto a mí mismo</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
+                 <td class="centro"><input type="radio" value="Nunca" name="ae2"></td>
+                 <td class="centro"><input type="radio" value = "CasiNunca" name ="ae2"></td>
+                 <td class="centro"><input type="radio" value = "AlgunasVeces" name="ae2"></td>
+                
+                 <td class="centro"><input type="radio" value="Siempre" name="ae2"></td>
              </tr>
              <tr>
                  <td>Me sentí bien conmigo mismo</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
+                 <td class="centro"><input type="radio" value="Nunca" name="ae3"></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name="ae3"></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name="ae3"></td>
+               
+                 <td class="centro"><input type="radio" value="Siempre" name="ae3"></td>
              </tr>
              <tr>
                  <td>Tuve buenas ideas</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
+                 <td class="centro"><input type="radio" value="Nunca" name="ae4"></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name="ae4"></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name="ae4"></td>
+                 
+                 <td class="centro"><input type="radio" value="Siempre" name="ae4"></td>
              </tr>
          </table>
-             <h1>FAMILIA. Los últimos 6 meses</h1>
+             <h1>FAMILIA. En el último año</h1>
          <table>
              <tr>
                  <td class="ppal"></td>
-                 <td >Nunca</td>
-                 <td>Casi Nunca</td>
-                 <td>Algunas Veces</td>
-                 <td>Casi siempre</td>
-                 <td>Siempre</td>
+                 <td class="head">Nunca</td>
+                 <td class="head">Algunas Veces</td>
+                 <td class="head">Con Frecuencia</td>
+                
+                 <td class="head">Siempre</td>
              </tr>
              <tr>
                  <td>Me llevo bien con mis padres</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
+                 <td class="centro"><input type="radio" value="Nunca" name="fm1"></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name="fm1" ></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name="fm1"></td>
+           
+                 <td class="centro"><input type="radio" value="Siempre" name="fm1"></td>
              </tr>
              <tr>
-                 <td>Me siento a gusto en casa</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
+                 <td> Me siento a gusto en casa</td>
+                 <td class="centro"><input type="radio" value="Nunca" name="fm2"></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name="fm2"></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name="fm2"></td>
+                 
+                 <td class="centro"><input type="radio" value="Siempre" name="fm2"></td>
              </tr>
              <tr>
                  <td>Tuvimos fuertes discusiones o peleas en casa</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
+                 <td class="centro"><input type="radio" value="Nunca" name="fm3"></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name="fm3"></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name="fm3"></td>
+              
+                 <td class="centro"><input type="radio" value="Siempre" name="fm3"></td>
              </tr>
              <tr>
                  <td>Me sentí agobiado por mis padres</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
+                 <td class="centro"><input type="radio" value="Nunca" name="fm4"></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name="fm4"></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name="fm4"></td>
+             
+                 <td class="centro"><input type="radio" value="Siempre" name="fm4"></td>
              </tr>
              <tr>
+                <td>Las Manifestaciones de cariño forman parte de mi vida cotidiana</td>
+                <td class="centro"><input type="radio" value="Nunca" name="fm5"></td>
+                <td class="centro"><input type="radio" value="CasiNunca" name="fm5"></td>
+                <td class="centro"><input type="radio" value="AlgunasVeces" name="fm5"></td>
+              
+                <td class="centro"><input type="radio" value="Siempre" name="fm5"></td>
+            </tr>
+            
+             <tr>
                  <td>Compartimos preocupaciones en familia</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
+                 <td class="centro"><input type="radio" value="Nunca" name="fm6"></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name="fm6"></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name="fm6"></td>
+                 
+                 <td class="centro"><input type="radio" value="Siempre" name="fm6"></td>
              </tr>
              <tr>
                  <td>Participé en actividades en compañía de mi familia </td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
+                 <td class="centro"><input type="radio" value="Nunca" name="fm7" ></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name="fm7"></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name="fm7"></td>
+                
+                 <td class="centro"><input type="radio" value="Siempre" name="fm7"></td>
              </tr>
              
          </table>
-                     <h1>ADICCIONES. Los últimos 6 meses</h1>
+         <h1>AMIGOS. En el último año</h1>
          <table>
              <tr>
                  <td class="ppal"></td>
-                 <td >Nunca</td>
-                 <td>Casi Nunca</td>
-                 <td>Algunas Veces</td>
-                 <td>Casi siempre</td>
-                 <td>Siempre</td>
+                 <td class="head">Nunca</td>
+                 <td class="head">Algunas Veces</td>
+                 <td class="head">Con Frecuencia</td>
+                
+                 <td class="head">Siempre</td>
              </tr>
              <tr>
-                 <td>Me han ofrecido drogas</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
+                 <td>Realicé actividades recreativas con mis amigos (incluso virtualmente)</td>
+                 <td class="centro"><input type="radio" value="Nunca" name="am1"></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name="am1"></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name="am1"></td>
+                
+                 <td class="centro"><input type="radio" value="Siempre" name="am1"></td>
              </tr>
              <tr>
-                 <td>He consumido bebidas alcohólicas</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-             </tr>
-             <tr>
-                 <td>He consumido drogas</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-             </tr>
-             <tr>
-                 <td>Me retiro de las fiestas porque no hay bebidas alcohólics o drogas</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-             </tr>
-             <tr>
-                 <td>He manejado un automóvil bajo los efectos del alcohol o drogas</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-             </tr>
-             
-             
-         </table>
-                      <h1>AMIGOS. Los últimos 6 meses</h1>
-         <table>
-             <tr>
-                 <td class="ppal"></td>
-                 <td>Nunca</td>
-                 <td>Casi Nunca</td>
-                 <td>Algunas Veces</td>
-                 <td>Casi siempre</td>
-                 <td>Siempre</td>
-             </tr>
-             <tr>
-                 <td>Realicé actividades recreativs con mis amigos</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-             </tr>
-             <tr>
-                 <td>Le caigo bien a los demás</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
+                 <td >Le caí bien a los demás</td>
+                 <td class="centro"><input type="radio" value="Nunca" name="am2"></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name="am2"></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name="am2"></td>
+              
+                 <td class="centro"><input type="radio" value="Siempre" name="am2" ></td>
              </tr>
              <tr>
                  <td>Me llevé bien con mis amigos</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
+                 <td class="centro"><input type="radio" value="Nunca" name="am3"></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name="am3"></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name="am3"></td>
+                 
+                 <td class="centro"><input type="radio" value="Siempre" name="am3"></td>
              </tr>
              <tr>
-                 <td>Me relaciono mas ON LINE que en persona</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
+                 <td >Me relaciono mas ON LINE que en persona, (independientemente del confinamiento)</td>
+                 <td class="centro"><input type="radio" value="Nunca" name="am4"></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name="am4"></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name="am4"></td>
+             
+                 <td class="centro"><input type="radio" value="Siempre" name="am4"></td>
              </tr>
-             <tr>
-                 <td>Conozco los peligros del internet</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-             </tr>
-       
+      
              
          </table>
-          <h1>ESCUELA. Los últimos 6 meses</h1>
+
+                     
+         <h1>ESCUELA. En el último año</h1>
          <table>
              <tr>
                  <td class="ppal"></td>
-                 <td>Nunca</td>
-                 <td>Casi Nunca</td>
-                 <td>Algunas Veces</td>
-                 <td>Casi siempre</td>
-                 <td>Siempre</td>
+                 <td class="head">Nunca</td>
+                 <td class="head">Algunas Veces</td>
+                 <td class="head">Con Frecuencia</td>
+                
+                 <td class="head">Siempre</td>
              </tr>
              <tr>
-                 <td>He participado de manera activa o pasiva en acoso escolar</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-             </tr>
-             <tr>
-                 <td>He sufrido bullyng por parte de mis compañeros</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-             </tr>
-             <tr>
-                 <td>Me espero al último momento para hacer trabajos y tareas</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-             </tr>
-             <tr>
-                 <td>Utilizo agenda para recordar mis tareas</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-             </tr>
-             <tr>
-                 <td>Conservo mis apuntes del día</td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-                 <td><input type="radio"></td>
-             </tr>
+                <td>Me interesaron las clases</td>
+                <td class="centro"><input type="radio" value="Nunca" name="es1"></td>
+                <td class="centro"><input type="radio" value="CasiNunca" name="es1"></td>
+                <td class="centro"><input type="radio" value="AlgunasVeces" name="es1"></td>
+                
+                <td class="centro"><input type="radio" value="Siempre" name="es1"></td>
+            </tr>
+            <tr>
+                <td>Tuve dificultad para concentrarme en la escuela</td>
+                <td class="centro"><input type="radio" value="Nunca" name="es2"></td>
+                <td class="centro"><input type="radio" value="CasiNunca" name="es2"></td>
+                <td class="centro"><input type="radio" value="AlgunasVeces" name="es2"></td>
+           
+                <td class="centro"><input type="radio" value="Siempre" name="es2"></td>
+            </tr>
+            <tr>
+                <td> Tengo problemas para trabajar bajo presión</td>
+                <td class="centro"><input type="radio" value="Nunca" name="es3"></td>
+                <td class="centro"><input type="radio" value="CasiNunca" name="es3"></td>
+                <td class="centro"><input type="radio" value="AlgunasVeces" name="es3"></td>
+      
+                <td class="centro"><input type="radio" value="Siempre" name="es3"></td>
+            </tr>
+
+            <tr>
+                <td>Me sentí integrado en mi salón de clase</td>
+                <td class="centro"><input type="radio" value="Nunca" name="es4"></td>
+                <td class="centro"><input type="radio" value="CasiNunca" name="es4"></td>
+                <td class="centro"><input type="radio" value="AlgunasVeces" name="es4"></td>
+          
+                <td class="centro"><input type="radio" value="Siempre" name="es4"></td>
+            </tr>
+            <tr>
+                <td>Es dificil la escuela para mí</td>
+                <td class="centro"><input type="radio" value="Nunca" name="es5"></td>
+                <td class="centro"><input type="radio" value="CasiNunca" name="es5"></td>
+                <td class="centro"><input type="radio" value="AlgunasVeces" name="es5"></td>
              
+                <td class="centro"><input type="radio" value="Siempre" name="es5"></td>
+            </tr>
+            <tr>
+                <td>Utilizo agenda para recordar mis tareas</td>
+                <td class="centro"><input type="radio" value="Nunca" name="es6"></td>
+                <td class="centro"><input type="radio" value="CasiNunca" name="e6"></td>
+                <td class="centro"><input type="radio" value="AlgunasVeces" name="es6"></td>
+                
+                <td class="centro"><input type="radio" value="Siempre" name="es6"></td>
+            </tr>
+
+            <tr>
+                <td>Conservo mis apuntes del día</td>
+                <td class="centro"><input type="radio" value="Nunca" name="es7"></td>
+                <td class="centro"><input type="radio" value="CasiNunca" name="es7"></td>
+                <td class="centro"><input type="radio" value="AlgunasVeces" name="es7"></td>
+            
+                <td class="centro"><input type="radio" value="Siempre" name="es7"></td>
+            </tr>
+            <tr>
+                <td>Me espero al último momento para hacer trabajos y tareas</td>
+                <td class="centro"><input type="radio" value="Nunca" name="es8"></td>
+                <td class="centro"><input type="radio" value="CasiNunca" name="es8"></td>
+                <td class="centro"><input type="radio" value="AlgunasVeces" name="es8"></td>
+       
+                <td class="centro"><input type="radio" value="Siempre" name="es8"></td>
+            </tr>
+
+            <tr>
+                <td>He sufrido bullyng por parte de los compañeros</td>
+                <td class="centro"><input type="radio" value="Nunca" name="es9"></td>
+                <td class="centro"><input type="radio" value="CasiNunca" name="es9"></td>
+                <td class="centro"><input type="radio" value="AlgunasVeces" name="es9"></td>
+     
+                <td class="centro"><input type="radio" value="Siempre" name="es9"></td>
+            </tr>
+       
+             <tr>
+                 <td>He participado de manera activa o pasiva en acoso a un ocmpañero</td>
+                 <td class="centro"><input type="radio" value="Nunca" name="es10"></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name="es10"></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name="es10"></td>
+             
+                 <td class="centro"><input type="radio" value="Siempre" name="es10"></td>
+             </tr>
+           
              
          </table>
-            <h3>Has asistido a algún servicio de asesoría o terapia psiquiatrica?</h3>
+
+                     <h1>CONDUCTAS DE RIESGO. En el último año</h1>
+         <table>
+             <tr>
+                 <td class="ppal"></td>
+                 <td class="head">Nunca</td>
+                 <td class="head">Algunas Veces</td>
+                 <td class="head">Con Frecuencia</td>
+            
+                 <td class="head">Siempre</td>
+             </tr>
+             <tr>
+                <td>Me han ofrecido bebidas alcohólicas</td>
+                <td class="centro"><input type="radio" value="Nunca" name="cr1" ></td>
+                <td class="centro"><input type="radio" value="CasiNunca" name="acr1" ></td>
+                <td class="centro"><input type="radio" value="AlgunasVeces" name="cr1"  ></td>
+            
+                <td class="centro"><input type="radio" value="Siempre" name="cr1" ></td>
+            </tr>
+             <tr>
+                 <td>Me han ofrecido drogas</td>
+                 <td class="centro"><input type="radio" value="Nunca" name="cr2" ></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name="cr2" ></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name="cr2"  ></td>
+            
+                 <td class="centro"><input type="radio" value="Siempre" name="cr2" ></td>
+             </tr>
+             <tr>
+                 <td >He consumido bebidas alcohólicas</td>
+                 <td class="centro"><input type="radio" value="Nunca" name="cr3"></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name="cr3"></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name="cr3"></td>
+                 
+                 <td class="centro"><input type="radio" value="Siempre" name="cr3"></td>
+             </tr>
+             <tr>
+                 <td>He consumido drogas</td>
+                 <td class="centro"><input type="radio" value="Nunca" name=cr4></td>
+                 <td class="centro"><input type="radio" value="CasiNunca" name="cr4" ></td>
+                 <td class="centro"><input type="radio" value="AlgunasVeces" name="cr4" ></td>
+                 
+                 <td class="centro"><input type="radio" value="Siempre" name="cr4"></td>
+             </tr>
+             <tr>
+                <td>Dejo de comer para sentirme mejor con mi imagen</td>
+                <td class="centro"><input type="radio" value="Nunca" name="cr5"></td>
+                <td class="centro"><input type="radio" value="CasiNunca" name="cr5" ></td>
+                <td class="centro"><input type="radio" value="AlgunasVeces" name="cr5" ></td>
+            
+                <td class="centro"><input type="radio" value="Siempre" name="cr5"></td>
+            </tr>
+
+            <tr>
+                <td>Me autolesiono</td>
+                <td class="centro"><input type="radio" value="Nunca" name="cr6"></td>
+                <td class="centro"><input type="radio" value="CasiNunca" name="cr6" ></td>
+                <td class="centro"><input type="radio" value="AlgunasVeces" name=cr6 ></td>
+               
+                <td class="centro"><input type="radio" value="Siempre" name="cr6"></td>
+            </tr>
+            <tr>
+                <td>Practico juegos que ponen en riesgo mi salud o vida</td>
+                <td class="centro"><input type="radio" value="Nunca" name="cr7"></td>
+                <td class="centro"><input type="radio" value="CasiNunca" name="cr7" ></td>
+                <td class="centro"><input type="radio" value="AlgunasVeces" name="cr7" ></td>
+               
+                <td class="centro"><input type="radio" value="Siempre" name="cr7"></td>
+            </tr>
+            <tr>
+                <td>He tenido ideas suicidas</td>
+                <td class="centro"><input type="radio" value="Nunca" name="cr8"></td>
+                <td class="centro"><input type="radio" value="CasiNunca" name="cr8" ></td>
+                <td class="centro"><input type="radio" value="AlgunasVeces" name="cr8" ></td>
+              
+                <td class="centro"><input type="radio" value="Siempre" name="cr8"></td>
+            </tr>
+ 
+         </table>
+          <h1>  SALUD</h1>
+           <h3>Has asistido a algún servicio de asesoría o terapia psiquiatrica?</h3>
            <input type="radio" name="psiq" onclick="muestraPsiq();" value="psiqsi">Si<br>
            <input type="radio" name="psiq" value ="psiqno" checked>No<br>
-           <input type="text" style="width:500px" id="psiq" hidden>
-            <h3>Has asistido a algún servicio de asesoría o terapia psicológica?</h3>
+           <input type="text"  name="psiq_data" style="width:500px" id="psiq" hidden>
+           <h3>Has asistido a algún servicio de asesoría o terapia psicológica?</h3>
            <input type="radio" name="psic"  onclick="muestraPsic();" value="psicsi">Si<br>
            <input type="radio" name="psic"  value ="psicno" checked>No<br>
-           <input type="text" style="width:500px" id="psic" hidden>
-         <input type="submit" value="Terminar" id="boton" style="width:130px; height:80px; margin-top:50px;margin-left:350px;background-color:#66ff99;color:red">
-	</form>
+           <input type="text" name="psic_data" style="width:500px" id="psic" hidden>
+           <h3> Enfermedades y/medicamentos que estoy tomando</h3>
+           <input style="width: 600px" type="text" name="medicamentos">
+           
+           <h1> CONTINGENCIA</h1>
+           <h3>
+           Qué dificultades he tenido durante este periodo de confinamiento? </h3>
+           <input type="text" style="width: 600px"  name="dificultades">
+           <h3>Qué aprendizajes he obtenido? </h3>
+           <input type="text" style="width: 600px"  name="aprendizaje">
+           <div style="margin: 30px;">
+           <input type="submit" value="Terminar" id="boton" style="width:130px; height:80px; margin-top:50px;margin-left:350px;background-color:#66ff99;color:red">
+           </div>
 </body>
 </html>

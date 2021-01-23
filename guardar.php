@@ -138,7 +138,7 @@ include "debugger.php";
 
  // echo  $qinsAlu."<br>";
   $mysqli->query($qinsAlu);
-
+  $mysqli->close();
 
   session_unset();
   session_destroy();

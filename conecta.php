@@ -6,6 +6,7 @@ $mysqli = new mysqli($datos['BD']['SERVER'],$datos['BD']['USER'],$datos['BD']['P
      echo "No se pudo  crear la conexion";
  }else{
     $mysqli->query("SET NAMES 'utf8'");
+    $mysqli->set_charset("utf8");
     //echo "Conexion exitosa!";
  }
 

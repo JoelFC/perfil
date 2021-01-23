@@ -6,7 +6,7 @@
 	<title>Encuesta</title>
     <style>
      #num1{
-     	width:100%;
+     	width:80%;
      	margin-top: 20px;
      	 padding: 30px;
      	background-color: yellow;
@@ -15,7 +15,7 @@
         margin-left: 100px;
       }
      #num2{
-        width:100%;       
+        width:80%;       
         margin-bottom: 20px;
         padding: 30px;
      	background-color: cyan;
@@ -51,29 +51,22 @@
 	<div id="header">
 		<img src="logo_univa.jpg" alt="" style="width:1024px;height:250px;">
 	</div>
-	<h1 id="num1">Cuestionario para primer semestre, Medicina</h1>
-	<h1 id="num2">Datos Personales</h1>
-	<form action="pru2.php" method="post"> 
+	<h1 id="num1" style="margin-left: 100px">Cuestionario para primer semestre, Medicina</h1>
+	<h1 id="num2" style="margin-left: 100px">Datos Personales</h1>
+	<form action="pru2.php" method="POST"> 
 
-		<h3>Nombre completo (Apellido paterno, apellido materno, nombre(s)</h3>
+		<h3>Nombre</h3>
 		<input type="text" style="width:500px" name="nombre">
+		<h3>Grupo: </h3><input type="text" name ="grupo"> 	
 		<h3>Sexo</h3>
-		   <input type="radio" name="sexo" value="Femenino">Femenino<br>
+		   <input type="radio" name="sexo" value="Femenino" checked>Femenino<br>
 		   <input type="radio" name="sexo" value ="Masculino">Masculino<br>
 		   
 		  
-		   <h3>Cual es tu edad?</h3> 
-           <input type="number" name="miedad" min="15" max="50" value="17">
-          
-           <h3>A qué se dedica tu papá? </h3> 
-           <input type="text" style="width:500px" name="papadedica">
-           <h3>A qué se dedica tu mamá?</h3> 
-           <input type="text" style="width:500px" name="mamadedica">
-           <h3>Cuántos hermanos tienes?</h3> 
-           <input type="number" name="numhnos" min="0" max="5" value="0">
-           <h3>Qué lugar ocupas entre ellos?</h3> 
-           <input type="number" name="lugar" min="1" max="5" value="1">
-           <h3>Con quién vives?</h3> 
+		   <h3>Cuantos años tienes?</h3> 
+           <input type="number" name="edad" min="15" max="50" value="17">
+        
+		   <h3>Con quién vives?</h3> 
              <table>
              	<tr>
              		<td style="width:300px"><input type="radio" name="vivocon" checked value="vivopadres">Mis Padres</td>
@@ -97,37 +90,21 @@
              		</td>
                  
              	</tr>
-             </table>
-           <h3>Llena completamente los siguientes datos</h3>
-           <table>
-           	<tr>
-           		<td>Calle</td>
-           		<td><input type="text" style="width:400px" name="calle"></td>
+			 </table>
+			 <h3>Revalidando carrera trunca/ estuviste en otra universidad o carrera </h3>
+			 <td><input type="radio" name="revalidandoTrunca" value="revalidaSi">Si</td>
+			 <td><input type="radio" name="revalidandoTrunca" value="revalidaNo"  checked>No</td>
+			 <h3>Soy Foraneo </h3>
+			 <td><input type="radio" name="soyForaneo" value="ForaneoSi">Si</td>
+			 <td><input type="radio" name="soyForaneo" value="ForaneoNo" checked>No</td>
+			 <h3><td>Teléfono</td> </h3>
+           		<td><input type="text" style="width:400px" name="dom_telefono"></td>
            	</tr>
            	<tr>
-           		<td>Num.Ext e Int.</td>
-           		<td><input type="text"  style="width:400px" name="numextint"></td>
-           	</tr>
-           	<tr>
-           		<td>Colonia</td>
-           		<td><input type="text" style="width:400px" name="colonia"></td>
-           	</tr>
-           	<tr>
-           		<td>Ciudad</td>
-           		<td><input type="text" style="width:400px" name="ciudad"></td>
-           	</tr>
-           	<tr>
-           		<td>Teléfono</td>
-           		<td><input type="text" style="width:400px" name="tel"></td>
-           	</tr>
-           	<tr>
-           		<td>Correo Electronico</td>
-           		<td><input type="text" style="width:400px" name="correo"></td>
-           	</tr>
-           
-
-           </table>
-
+           		<h3><td>Correo Electronico</td> </h3>
+           		<td><input type="text" style="width:400px" name="dom_correo"></td>
+			
+         <br> <br>
          <input type="submit" id="boton" value="Continuar" style="width:130px; height:80px; margin-left: 350px; margin-top: 20px;  background-color: #5af278;">
 	</form>
 </body>
