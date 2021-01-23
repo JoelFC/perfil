@@ -165,10 +165,10 @@ include "debugger.php";
 <body>
     <div style="margin: 300px; text-align: center;">
         <br>
-    	<h1><br>Gracias por aplicar este cuestionario <?php echo $d_solo;  ?></h1>
+    	<h1><br>Gracias por aplicar este cuestionario </h1>
     	<?php 
     	     //  <meta http-equiv="refresh" content="5; URL= index1.html">    o
-           header( "refresh:10; url=index1.html" ); 
+           header( "refresh:3; url=index1.html" ); 
         ?>
     </div>	
 </body>
